@@ -8,7 +8,7 @@ purpose: Quick reference for all agents and their skill ownership
 
 | Agent | Layer | Skills owned |
 |---|---|---|
-| orchestrator | 0 | handsOff.orchestrator |
+| orchestrator | 0 | orchestrator |
 | researcher | 1 | framework-detector, design-system-detector, docs-fetcher, setup-wizard |
 | designer | 2 | figma-reader, token-extractor, layout-analyzer, component-mapper, section-detector |
 | developer | 3 | code-generator, token-applier, responsive-adapter, scaffold-writer |
@@ -27,5 +27,5 @@ researcher → designer → developer → qa (feedback loop) → seo → deliver
 
 ## Naming convention
 
-All skills follow the `handsOff.<skill-name>` namespace.
-All skill files live at `agents/<agent>/skills/handsOff.<skill-name>/SKILL.md`.
+All skills follow the `<skill-name>` namespace.
+All skill files live at `agents/<agent>/skills/<skill-name>/SKILL.md`.
