@@ -1,0 +1,1 @@
+/Users/darry/Projects/Personal/handsOff skills/handsoff-skills/handsOff/shared/output-contract.md
