@@ -21,6 +21,17 @@ depends_on:
 ## Purpose
 Extracts design tokens from the raw design tree and writes them to tokens.md.
 
+## MANDATORY: Output Location
+
+**tokens.md MUST be written to the repository root**, NOT inside handsoff-skills/.
+
+```
+WRONG: handsoff-skills/handsOff/shared/tokens.md
+CORRECT: ./tokens.md (repository root)
+```
+
+See output-location-rules.md for full rules.
+
 ## When this skill runs
 After figma-reader completes and before any code generation begins.
 
