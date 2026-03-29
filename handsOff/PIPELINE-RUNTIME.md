@@ -1,12 +1,34 @@
 ---
 file: PIPELINE-RUNTIME.md
-version: 0.1.0
+version: 0.2.0
 purpose: Runtime enforcement and error recovery for handsOff pipeline
 ---
 
 # Pipeline Runtime Plan
 
 This document addresses all identified workflow concerns in a single cohesive system.
+
+## Orchestrator Mandate: Always Use Specialized Agents
+
+The orchestrator's core responsibility is **delegation, not execution**. The orchestrator MUST always utilize the specialized agents (researcher, designer, developer, qa, seo) to perform work rather than attempting to execute skills directly.
+
+### Orchestrator Rules
+
+1. **Delegate ALL work** — Never execute skills directly; always invoke the appropriate agent
+2. **Respect agent boundaries** — Each agent owns its domain; don't bypass them
+3. **Invoke in dependency order** — Follow the skill dependency graph
+4. **Enforce validation gates** — Run pipeline-guardian, stage-gate, and intent-validator
+5. **Handle failures through agents** — Don't manually fix; retry through the agent
+
+### Anti-Patterns (Strictly Prohibited)
+
+- Orchestrator directly reading Figma files
+- Orchestrator directly writing code
+- Orchestrator skipping stages to "save time"
+- Orchestrator performing validation directly instead of delegating to qa
+- Orchestrator executing SEO tasks directly instead of delegating to seo
+
+---
 
 ## Problems Addressed
 
