@@ -10,10 +10,11 @@ purpose: Canonical schema for the handsOff shared context object
 
 ```json
 {
-  "meta": {
-    "run-id": "string — uuid for this pipeline run",
-    "timestamp": "string — ISO 8601",
-    "status": "string — pending | running | qa-loop | seo | complete | failed"
+  "source-of-truth": {
+    "framework-md-path": "framework.md",
+    "tokens-md-path": "tokens.md",
+    "framework-md-generated-at": "string — ISO 8601",
+    "tokens-md-generated-at": "string — ISO 8601"
   },
   "detection": {
     "framework": "string — react | vue | astro | svelte | html | null",
