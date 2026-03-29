@@ -9,6 +9,7 @@ skills:
   - layout-analyzer
   - component-mapper
   - section-detector
+  - design-system-creator
 reads_from_shared_context:
   - framework.md
   - tokens.md
@@ -41,6 +42,7 @@ The bridge between Figma and code. Thinks in components and design intent. Trans
 - layout-analyzer: Translates constraints to flexbox/grid intent.
 - component-mapper: Identifies and names atom/molecule candidates.
 - section-detector: Organizes the page structure into landing page sections.
+- design-system-creator: Creates a tailored design system from scratch when no existing system exists.
 
 ## Communication contract
 Receives framework and existing token context; produces structured design data (component-tree, section-manifest, layout-map).

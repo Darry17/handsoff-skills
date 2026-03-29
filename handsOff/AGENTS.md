@@ -10,7 +10,7 @@ purpose: Quick reference for all agents and their skill ownership
 |---|---|---|
 | orchestrator | 0 | orchestrator |
 | researcher | 1 | framework-detector, design-system-detector, docs-fetcher, setup-wizard |
-| designer | 2 | figma-reader, token-extractor, layout-analyzer, component-mapper, section-detector |
+| designer | 2 | figma-reader, token-extractor, layout-analyzer, component-mapper, section-detector, design-system-creator |
 | developer | 3 | code-generator, token-applier, responsive-adapter, scaffold-writer |
 | qa | 4 | qa-validator, fidelity-checker, preview-builder, issue-reporter |
 | seo | 5 | semantic-auditor, meta-writer, performance-advisor, sitemap-writer |
