@@ -135,8 +135,8 @@ writes:
 
 Before pipeline completes, the orchestrator MUST verify:
 
-1. `tokens.md` exists at repository root
-2. `framework.md` exists at repository root
+1. `tokens.md` exists at project root
+2. `framework.md` exists at project root
 3. No generated files exist inside `handsoff-skills/` folder
 
 If files exist in wrong location:
