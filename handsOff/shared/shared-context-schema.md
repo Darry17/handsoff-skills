@@ -53,6 +53,11 @@ purpose: Canonical schema for the handsOff shared context object
     "sitemap-xml": "string — sitemap.xml content",
     "robots-txt": "string — robots.txt content",
     "seo-report": "object — { critical[], warning[], suggestion[] }"
+  },
+  "agent-logs": {
+    "log-file-path": "string — path to agent-interaction-logs.md",
+    "entries": "array — { timestamp, from, to, action, decision, context }",
+    "latest-entry": "object — most recent log entry"
   }
 }
 ```
