@@ -58,6 +58,19 @@ During pipeline execution, agents communicate in the terminal using a boxed form
 
 See **terminal-communication.md** for full terminal output format and user interaction rules.
 
+## Output Locations
+
+**All generated source-of-truth files MUST be written to the repository root**, never inside handsoff-skills/.
+
+| File | Location |
+|---|---|
+| tokens.md | `./tokens.md` |
+| framework.md | `./framework.md` |
+| shared-context.json | `./shared-context.json` |
+| handsOff-logs.md | `./handsOff-logs.md` |
+
+See **output-location-rules.md** for full rules.
+
 ## Supported frameworks
 
 React · Vue · Astro · Svelte · Plain HTML/CSS
