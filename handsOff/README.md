@@ -52,6 +52,12 @@ The orchestrator MUST always delegate work to specialized agents. It does not pe
 ### Agent Boundaries
 Each agent owns its domain. The orchestrator retries through the same agent on failure—it does not "fix" issues manually.
 
+## Terminal Communication
+
+During pipeline execution, agents communicate in the terminal using a boxed format. Questions and clarifications are handled directly between agents and users.
+
+See **terminal-communication.md** for full terminal output format and user interaction rules.
+
 ## Supported frameworks
 
 React · Vue · Astro · Svelte · Plain HTML/CSS

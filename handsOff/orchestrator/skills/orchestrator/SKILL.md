@@ -89,3 +89,42 @@ Before each skill:
 
 ## References
 See PIPELINE-RUNTIME.md for full error handling and recovery mechanisms.
+See terminal-communication.md for terminal output format and user interaction rules.
+
+---
+
+# Terminal Communication Rules
+
+The orchestrator MUST ensure all agents output to the terminal using the format defined in `terminal-communication.md`.
+
+### Terminal Output Requirements
+
+1. **All agents must announce themselves** at the start of execution
+2. **All delegations must be displayed** in terminal with `→ Delegating to <agent>` format
+3. **All progress must be shown** with progress bars or checkmarks
+4. **All completions must be announced** with `✓ Task complete` format
+
+### User Questions
+
+When agents need user clarification:
+- Agents MUST ask the user **directly** (not via orchestrator)
+- Format: Use boxed terminal output with `💬 <agent> needs clarification:`
+- Provide numbered options for user selection
+- Wait for user response before proceeding
+- Log all user responses to agent-interaction-logs.md
+
+### What the Orchestrator Manages
+
+The orchestrator handles:
+- Pipeline initialization and completion messages
+- Delegation display (agent → agent)
+- Error and warning display
+- Final deliverable summary
+
+### What Agents Manage Directly
+
+Each agent handles:
+- Progress messages during execution
+- Their own questions to users
+- Completion messages
+- Logging to agent-interaction-logs.md
