@@ -70,11 +70,3 @@ See **terminal-communication.md** for full terminal output format and user inter
 | handsOff-logs.md | `./handsOff-logs.md` |
 
 See **output-location-rules.md** for full rules.
-
-## Supported frameworks
-
-React · Vue · Astro · Svelte · Plain HTML/CSS
-
-## Supported styling systems
-
-Tailwind CSS · CSS Modules · Plain CSS · SCSS
