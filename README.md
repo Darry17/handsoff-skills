@@ -78,15 +78,3 @@ React · Vue · Astro · Svelte · Plain HTML/CSS
 ## Supported styling systems
 
 Tailwind CSS · CSS Modules · Plain CSS · SCSS
-
-## Getting started
-
-[To be authored]
-
-## Framework support matrix
-
-[To be authored]
-
-## Contribution guide
-
-[To be authored]
